@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "siteTitle": "SASA — MERN & Automation Engineer",
+    "siteDescription": "SASA builds production-ready MERN apps, scraping pipelines, and Arabic OCR solutions.",
+    "author": "SASA"
+  },
+  "themes": {
+    "light": {
+      "name": "light",
+      "background": "#FFFFFF",
+      "surface": "#F6F7F9",
+      "text": "#0B1220",
+      "muted": "#5B6470",
+      "primary": "#0B76FF",
+      "accent": "#0B76FF"
+    },
+    "dark": {
+      "name": "dark",
+      "background": "#0B0F14",
+      "surface": "#0F1720",
+      "text": "#E6EEF3",
+      "muted": "#9AA6B2",
+      "primary": "#4FD1C5",
+      "accent": "#4FD1C5"
+    },
+    "dracula": {
+      "name": "dracula",
+      "background": "#0B0404",
+      "surface": "#1A0A0A",
+      "text": "#F8F5F5",
+      "muted": "#B9A7A7",
+      "primary": "#FF2D2D",
+      "accent": "#FF2D2D"
+    }
+  },
+  "hero": {
+    "name": "SASA",
+    "headline": "MERN Developer & Automation Engineer",
+    "subline": "I build web apps, scrapers, and Arabic OCR pipelines to convert messy documents into reliable data.",
+    "ctaPrimary": {
+      "label": "View projects",
+      "href": "/projects"
+    },
+    "ctaSecondary": {
+      "label": "Hire me",
+      "href": "/contact"
+    },
+    "portrait": "/src/assets/portrait-placeholder.png"
+  },
+  "about": {
+    "short": "I'm SASA — a MERN-stack developer and web-scraping specialist. I turn complex document workflows into maintainable systems.",
+    "long": "I focus on full-stack web applications using MongoDB, Express, React, Node.js and on building scraping and OCR solutions (Tesseract / PyTorch / Paddle) for Arabic documents. I'm available for freelance work and consulting.",
+    "timeline": [
+      { "year": 2022, "title": "Started freelancing", "detail": "Signed first clients on Khamsat & Mostaqel." },
+      { "year": 2023, "title": "OCR research", "detail": "Built pipelines for Arabic printed and handwritten digit extraction." },
+      { "year": 2024, "title": "SaaS blueprint", "detail": "Designed a document automation SaaS for templated PDF generation." },
+      { "year": 2024, "title": "DEPI Internship", "detail": "Software Engineering Intern at Ministry of Communication & Technology (Oct 2024 — Jun 2025)." }
+    ],
+    "education": {
+      "degree": "B.Sc. Computer Science (in progress)",
+      "institution": "Higher Institute of Information Systems and Computer Science, 6th of October City",
+      "expectedGraduation": "2027"
+    },
+    "skills": {
+      "languages": ["JavaScript", "TypeScript", "Python"],
+      "frameworks": ["React", "Node.js", "Express", "Tailwind", "Playwright", "Selenium"],
+      "databases": ["MongoDB", "PostgreSQL"],
+      "tools": ["Docker", "Git", "AWS", "DigitalOcean"],
+      "special": ["Web Scraping", "OCR (Arabic)", "Telegram Bots", "PDF generation"]
+    }
+  },
+  "projects": [
+    {
+      "slug": "arabic-ocr-pipeline",
+      "title": "Arabic Exam OCR Pipeline",
+      "summary": "Table detection + CNN classifier for Arabic handwritten digits to extract ranks and IDs from scanned PDFs.",
+      "role": "Solo Developer",
+      "timeline": "Jan 2025 — Mar 2025",
+      "tech": ["Python", "PyTorch", "Tesseract", "Node.js", "PostgreSQL"],
+      "description": "Built a pipeline that detects tables in scanned exam PDFs, segments cells, classifies handwritten Arabic digits, and stores the results in PostgreSQL. The pipeline includes a small web admin built with Node.js to review predictions.",
+      "challenges": ["Handwritten Arabic numerals", "Noisy scans", "Variable table layouts"],
+      "impact": {
+        "manualHoursSavedPerWeek": 28,
+        "accuracyPercent": 94.1
+      },
+      "screenshots": ["/src/assets/ocr-1.png", "/src/assets/ocr-2.png"],
+      "repo": "https://github.com/sasa/fake-ocr-pipeline",
+      "demo": "https://demo.example.com/ocr"
+    },
+    {
+      "slug": "gym-management-mern",
+      "title": "Gym Management System (MERN)",
+      "summary": "A complete MERN app for gym owners with membership plans, trainer assignment, and reporting.",
+      "role": "Lead Developer",
+      "timeline": "Apr 2025 — Jun 2025",
+      "tech": ["MongoDB", "Express", "React", "Node.js"],
+      "description": "Multi-tenant gym management system supporting monthly/yearly subscriptions, trainer scheduling, and a printable member report export (PDF).",
+      "challenges": ["Multi-tenant data isolation", "Printable reports"],
+      "impact": {
+        "gymsOnboarded": 6,
+        "avgMonthlyActiveUsers": 420
+      },
+      "screenshots": ["/src/assets/gym-1.png"],
+      "repo": "https://github.com/sasa/fake-gym-app",
+      "demo": "https://demo.example.com/gym"
+    },
+    {
+      "slug": "document-generator",
+      "title": "Document Template Engine",
+      "summary": "Inject data into Word templates then export to PDF for official forms and certificates.",
+      "role": "Developer",
+      "timeline": "Jul 2025 — Sep 2025",
+      "tech": ["Node.js", "LibreOffice", "docx", "puppeteer"],
+      "description": "Service to programmatically inject data into .docx templates, convert them to PDF, and return print-ready documents. Includes a small Solid/React front-end for uploads.",
+      "challenges": ["Consistent layout across templates", "High-throughput conversion"],
+      "impact": {
+        "avgConversionTimeSec": 3.7,
+        "successfulBatches": 1200
+      },
+      "screenshots": ["/src/assets/docgen-1.png"],
+      "repo": "https://github.com/sasa/fake-docgen",
+      "demo": "https://demo.example.com/docgen"
+    },
+    {
+      "slug": "comforty-ecommerce",
+      "title": "Comforty — E-commerce Platform",
+      "summary": "Full-stack online store built with MERN to support user auth, product management, and order processing (in progress).",
+      "role": "Developer",
+      "timeline": "In Progress",
+      "tech": ["MongoDB", "Express", "React", "Node.js"],
+      "description": "Building a production-ready e-commerce store with clean admin flows and order lifecycle management.",
+      "challenges": ["Payment integrations", "Scalable product catalog"],
+      "impact": {
+        "expectedLaunch": "Q1 2026"
+      },
+      "screenshots": ["/src/assets/placeholder.png"],
+      "repo": "https://github.com/Cyb3R0xSASA/comforty",
+      "demo": ""
+    },
+    {
+      "slug": "crm-system",
+      "title": "CRM System",
+      "summary": "Customer Relationship Management tool with NestJS and React to reduce data entry time.",
+      "role": "Developer",
+      "timeline": "Past",
+      "tech": ["NestJS", "React", "PostgreSQL"],
+      "description": "Built a CRM that reduced data entry time by 30% and improved client interaction tracking.",
+      "challenges": ["Complex forms", "Reporting UI"],
+      "impact": {
+        "reductionInDataEntry": "30%"
+      },
+      "screenshots": ["/src/assets/placeholder.png"],
+      "repo": "",
+      "demo": ""
+    },
+    {
+      "slug": "real-time-sports-tracker",
+      "title": "Real-Time Sports Match Tracker",
+      "summary": "Playwright/Node.js based bot to track live match events and notify via channels.",
+      "role": "Developer",
+      "timeline": "Past",
+      "tech": ["Node.js", "Playwright"],
+      "description": "Developed a bot to track live sports matches, analyze results, and send instant notifications.",
+      "challenges": ["Real-time scraping", "Latency"],
+      "impact": {
+        "useCase": "Instant score updates and notifications"
+      },
+      "screenshots": ["/src/assets/placeholder.png"],
+      "repo": "",
+      "demo": ""
+    }
+  ],
+  "services": [
+    { "id": "web-apps", "title": "Web Applications", "desc": "Full-stack MERN applications, admin dashboards, and small SaaS." },
+    { "id": "scraping", "title": "Scraping & Automation", "desc": "Custom scraping pipelines using Playwright/Selenium with queueing & proxy support." },
+    { "id": "ocr", "title": "OCR & Document Automation", "desc": "Arabic OCR pipelines, table detection, and PDF generation." }
+  ],
+  "testimonials": [
+    {
+      "name": "Fatma A.",
+      "company": "EduTech Co.",
+      "quote": "SASA delivered a reliable OCR pipeline that saved our team hours of manual work every week."
+    },
+    {
+      "name": "Omar H.",
+      "company": "LocalGyms",
+      "quote": "Fast, clear communication and a production-ready gym management system."
+    }
+  ],
+  "blog": [
+    {
+      "slug": "building-arabic-ocr-pipeline",
+      "title": "Building an Arabic OCR Pipeline from Scratch",
+      "excerpt": "A deep dive into detecting tables, segmenting cells, and classifying handwritten Arabic digits.",
+      "date": "2025-03-15",
+      "readTime": "8 min",
+      "tags": ["OCR", "Python", "Machine Learning"]
+    },
+    {
+      "slug": "web-scraping-best-practices",
+      "title": "Web Scraping Best Practices in 2025",
+      "excerpt": "Lessons learned from building production scraping pipelines with Playwright and Selenium.",
+      "date": "2025-02-20",
+      "readTime": "6 min",
+      "tags": ["Scraping", "Automation", "Node.js"]
+    },
+    {
+      "slug": "mern-stack-architecture",
+      "title": "Scalable MERN Stack Architecture",
+      "excerpt": "How I structure MERN applications for maintainability and growth.",
+      "date": "2025-01-10",
+      "readTime": "10 min",
+      "tags": ["MERN", "Architecture", "Best Practices"]
+    }
+  ],
+  "contact": {
+    "email": "mohmedmostafayoussef@gmail.com",
+    "phone": "+201557154846",
+    "telegram": "@sasa_demo",
+    "linkedIn": "https://www.linkedin.com/in/mohmedmostafayoussef/",
+    "github": "https://www.github.com/Cyb3R0xSASA/",
+    "locations": ["10th District, 6th Of October, Cairo, Egypt"],
+    "contactFormRecipient": "mohmedmostafayoussef@gmail.com"
+  },
+  "resume": {
+    "pdfLink": "/src/assets/resume-sasa-sample.pdf",
+    "summaryPoints": [
+      "MERN stack development",
+      "Web scraping & automation",
+      "Arabic OCR pipelines",
+      "Freelance & consulting experience"
+    ],
+    "education": {
+      "degree": "B.Sc. Computer Science (in progress)",
+      "institution": "Higher Institute of Information Systems and Computer Science, 6th of October City",
+      "expectedGraduation": "2027"
+    },
+    "workExperience": [
+      {
+        "title": "Software Engineering Intern",
+        "company": "Ministry of Communication & Technology (DEPI Internship)",
+        "dates": "Oct 2024 — Jun 2025",
+        "highlights": [
+          "Applied advanced web development skills including React, Node, Express, Docker.",
+          "Capstone cloud development project planned as part of internship."
+        ]
+      }
+    ]
+  }
+}
